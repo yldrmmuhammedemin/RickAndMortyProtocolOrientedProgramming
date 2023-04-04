@@ -15,8 +15,7 @@
 		C3610BCF29DC596C00145062 /* RickAndMortyProtocolOrientedProgramingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3610BCE29DC596C00145062 /* RickAndMortyProtocolOrientedProgramingTests.swift */; };
 		C3610BD929DC596C00145062 /* RickAndMortyProtocolOrientedProgramingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3610BD829DC596C00145062 /* RickAndMortyProtocolOrientedProgramingUITests.swift */; };
 		C3610BDB29DC596C00145062 /* RickAndMortyProtocolOrientedProgramingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3610BDA29DC596C00145062 /* RickAndMortyProtocolOrientedProgramingUITestsLaunchTests.swift */; };
-		C3610BE929DC5B0800145062 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C3610BE829DC5B0800145062 /* SnapKit */; };
-		C3610BEB29DC5B0800145062 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C3610BEA29DC5B0800145062 /* SnapKit-Dynamic */; };
+		C3610BF529DC67AC00145062 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C3610BF429DC67AC00145062 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3610BE929DC5B0800145062 /* SnapKit in Frameworks */,
-				C3610BEB29DC5B0800145062 /* SnapKit-Dynamic in Frameworks */,
+				C3610BF529DC67AC00145062 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +99,9 @@
 		C3610BB629DC596A00145062 /* RickAndMortyProtocolOrientedPrograming */ = {
 			isa = PBXGroup;
 			children = (
+				C3610BC529DC596C00145062 /* Info.plist */,
+				C3610BC229DC596C00145062 /* LaunchScreen.storyboard */,
+				C3610BC029DC596C00145062 /* Assets.xcassets */,
 				C3610BEC29DC5B3C00145062 /* RickyMorty */,
 			);
 			path = RickAndMortyProtocolOrientedPrograming;
@@ -177,9 +178,6 @@
 		C3610BF229DC5BAF00145062 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C3610BC029DC596C00145062 /* Assets.xcassets */,
-				C3610BC229DC596C00145062 /* LaunchScreen.storyboard */,
-				C3610BC529DC596C00145062 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -201,8 +199,7 @@
 			);
 			name = RickAndMortyProtocolOrientedPrograming;
 			packageProductDependencies = (
-				C3610BE829DC5B0800145062 /* SnapKit */,
-				C3610BEA29DC5B0800145062 /* SnapKit-Dynamic */,
+				C3610BF429DC67AC00145062 /* SnapKit */,
 			);
 			productName = RickAndMortyProtocolOrientedPrograming;
 			productReference = C3610BB429DC596A00145062 /* RickAndMortyProtocolOrientedPrograming.app */;
@@ -277,7 +274,7 @@
 			);
 			mainGroup = C3610BAB29DC596A00145062;
 			packageReferences = (
-				C3610BE729DC5B0800145062 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C3610BF329DC67AC00145062 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = C3610BB529DC596A00145062 /* Products */;
 			projectDirPath = "";
@@ -657,7 +654,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C3610BE729DC5B0800145062 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		C3610BF329DC67AC00145062 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
@@ -668,15 +665,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C3610BE829DC5B0800145062 /* SnapKit */ = {
+		C3610BF429DC67AC00145062 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C3610BE729DC5B0800145062 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = C3610BF329DC67AC00145062 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		C3610BEA29DC5B0800145062 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C3610BE729DC5B0800145062 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
