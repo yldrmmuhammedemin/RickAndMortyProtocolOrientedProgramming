@@ -92,6 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C30F7E4129E19F4F0001666E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C3610BBB29DC596A00145062 /* RickyMortyViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C30F7E4229E19F570001666E /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDB42729DD54DA00CA61CD /* RickyMortyTableViewCell.swift */,
+			);
+			path = CellView;
+			sourceTree = "<group>";
+		};
 		C3610BAB29DC596A00145062 = {
 			isa = PBXGroup;
 			children = (
@@ -174,8 +190,8 @@
 		C3610BEF29DC5B6E00145062 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C3610BBB29DC596A00145062 /* RickyMortyViewController.swift */,
-				C3CDB42729DD54DA00CA61CD /* RickyMortyTableViewCell.swift */,
+				C30F7E4229E19F570001666E /* CellView */,
+				C30F7E4129E19F4F0001666E /* Controller */,
 			);
 			path = View;
 			sourceTree = "<group>";

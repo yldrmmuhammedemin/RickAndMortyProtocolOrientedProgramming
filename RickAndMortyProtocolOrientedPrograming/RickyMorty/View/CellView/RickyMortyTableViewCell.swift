@@ -56,7 +56,10 @@ class RickyMortyTableViewCell: UITableViewCell {
     
     public func setDetails(model: Result){
         characterName.text = model.name
-        characterImageView.sd_setImage(with: URL(string:model.image ?? Const.noImageUrl) ?? URL(string: Const.noImageUrl))
+        characterImageView
+            .sd_setImage(with: URL(string:model.image
+                                                 ?? Const.noImageUrl)
+                                       ?? URL(string: Const.noImageUrl))
     }
 
 }

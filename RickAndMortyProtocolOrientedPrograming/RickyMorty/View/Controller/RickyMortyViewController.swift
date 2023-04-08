@@ -26,10 +26,9 @@ protocol IRickyMortyViewController{
     
      // MARK: - Variables and Components
     private lazy var results: [Result] = []
-     lazy var rickyMortyViewModel:IRickyMortyViewModel = RickyMortyViewModel()
-    
-    
      
+    lazy var rickyMortyViewModel:IRickyMortyViewModel = RickyMortyViewModel()
+    
     private let labelTitle : UILabel = {
         let label = UILabel()
         label.text = "Rick And Morty Characters"
@@ -145,8 +144,5 @@ extension RickyMortyViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 300
     }
-
-    
-    
 }
 
