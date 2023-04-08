@@ -8,6 +8,7 @@
 import Foundation
 
 enum RickyMortyServiceEndpoint: String{
+    // MARK: - API URL Enum
     case BASE_URL = "https://rickandmortyapi.com/api"
     case PATH = "/character"
     

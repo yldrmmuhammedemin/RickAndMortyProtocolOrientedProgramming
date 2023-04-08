@@ -15,7 +15,7 @@ protocol IRickyMortyService{
     
 }
 
-
+// MARK: - API Get Request
 struct RickyMortyService:IRickyMortyService{
     func fetchAllDatas(response: @escaping ([Result]?) -> Void) {
         AF.request(RickyMortyServiceEndpoint.characterPath()).responseDecodable(of: PostModel.self) { model in

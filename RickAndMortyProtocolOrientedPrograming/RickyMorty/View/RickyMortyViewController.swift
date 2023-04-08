@@ -47,8 +47,8 @@ protocol IRickyMortyViewController{
     
      private let tableView: UITableView = {
          let tableView = UITableView()
-//         tableView.register(RickyMortyTableViewCell.self,
-//                            forCellReuseIdentifier: RickyMortyTableViewCell.identifier)
+         tableView.register(RickyMortyTableViewCell.self,
+                            forCellReuseIdentifier: RickyMortyTableViewCell.identifier)
          return tableView
      }()
      
@@ -136,15 +136,15 @@ extension RickyMortyViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        guard let cell = tableView.dequeueReusableCell(withIdentifier: RickyMortyTableViewCell.identifier, for: indexPath) as? RickyMortyTableViewCell else{
-//            return UITableViewCell()
-//        }
-//        return cell
-        let cell = UITableViewCell()
-        cell.textLabel?.text = results[indexPath.row].name ?? ""
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: RickyMortyTableViewCell.identifier, for: indexPath) as? RickyMortyTableViewCell else{
+            return UITableViewCell()
+        }
+        cell.setDetails(model: results[indexPath.row])
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 300
+    }
 
     
     
